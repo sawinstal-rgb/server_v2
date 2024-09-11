@@ -1,2 +1,2 @@
-**Troubleshooting**
-[Shell Integration Unavailable]()
+### Troubleshooting
+> [Shell Integration Unavailable]()
