@@ -1,5 +1,3 @@
-# Troubleshooting - Shell Integration Unavailable
-
 - [What is Shell Integration?](#what-is-shell-integration)
 - [How to Fix "Shell Integration Unavailable"](#how-to-fix-shell-integration-unavailable)
   - [Step 1: Update VSCode or Cursor](#step-1-update-vscode-or-cursor)
