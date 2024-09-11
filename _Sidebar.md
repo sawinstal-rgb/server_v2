@@ -1,2 +1,4 @@
-### Troubleshooting
-> [Shell Integration Unavailable]()
+### Claude Dev Wiki
+**Troubleshooting**
+
+[Shell Integration Unavailable]()
