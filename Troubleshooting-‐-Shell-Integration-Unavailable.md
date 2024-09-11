@@ -26,7 +26,7 @@ First, make sure you're using the latest version of VSCode or Cursor:
 1. Open VSCode
 2. Press `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows/Linux)
 3. Type "Terminal: Select Default Profile" and choose it
-4. Select one of the supported shells: bash, zsh, fish, or PowerShell.
+4. Select one of the supported shells: zsh, bash, fish, or PowerShell.
 
 ### Step 4: Restart VSCode
 
