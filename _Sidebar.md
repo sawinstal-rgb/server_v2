@@ -1,3 +1,2 @@
 **Troubleshooting**
-
 [Shell Integration Unavailable]()
