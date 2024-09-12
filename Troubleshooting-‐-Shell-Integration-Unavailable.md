@@ -18,8 +18,7 @@ First, make sure you're using the latest version of VSCode or Cursor:
 1. Open VSCode or Cursor
 2. Press `Cmd + Shift + P` (Mac) or `Ctrl + Shift + P` (Windows/Linux)
 3. Type "Check for Updates" (VSCode) or "Attempt Update" (Cursor) and select it
-4. If an update is available, install it
-5. Restart VSCode/Cursor after the update
+4. Restart VSCode/Cursor after the update
 
 ### Step 2: Configure VSCode to Use the Correct Shell
 
