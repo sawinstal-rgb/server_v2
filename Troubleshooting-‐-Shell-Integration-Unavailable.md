@@ -3,7 +3,9 @@
   - [Step 1: Update VSCode or Cursor](#step-1-update-vscode-or-cursor)
   - [Step 2: Configure VSCode to Use the Correct Shell](#step-3-configure-vscode-to-use-the-correct-shell)
   - [Step 3: Restart VSCode](#step-4-restart-vscode)
-- [Still Having Issues?](#still-having-issues)
+- [Still Having Trouble?](#still-having-trouble)
+- [Unusual Terminal Output](#unusual-terminal-output)
+- [Support](#support)
 
 ## What is Shell Integration?
 
@@ -35,11 +37,48 @@ After making these changes:
 2. Reopen VSCode
 3. Start a new Claude Dev session (you can resume your previous task and try to run the command again, this time with Claude being able to see the output)
 
-## Still Having Issues?
+## Still Having Trouble?
+
+If you're still experiencing issues after trying the basic troubleshooting steps, you can try [manually installing shell integration](https://code.visualstudio.com/docs/terminal/shell-integration#_manual-installation). For example, if you use zsh:
+
+1. Run `code ~/.zshrc` in the terminal to open your zsh configuration file.
+3. Add the following line to your `~/.zshrc`:
+
+```bash
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
+```
+
+4. Save the file.
+5. Quit VSCode completely.
+6. Reopen VSCode and start a new Claude Dev session.
+
+## Unusual Terminal Output
+
+If you're seeing unusual output with rectangles, lines, escape sequences, or control characters, it may be related to terminal customization tools. Common culprits include:
+
+- Powerlevel10k: A zsh theme that adds visual elements to the prompt
+- Oh My Zsh: A framework for managing zsh configurations
+- Fish shell themes
+
+To troubleshoot:
+
+1. Temporarily disable these tools in your shell configuration file (e.g., `~/.zshrc` for Zsh)
+2. If the issue resolves, gradually re-enable features to identify the conflicting component
+
+For example, if you're using Powerlevel10k with Zsh, you can disable it by commenting out the relevant line in your `~/.zshrc` file:
+
+```bash
+# Comment out the Powerlevel10k source line
+# source /path/to/powerlevel10k/powerlevel10k.zsh-theme
+```
+
+If disabling these customizations resolves the issue, you may need to find alternative configurations that are compatible with VSCode's shell integration feature.
+
+## Support
 
 If you've followed these steps and are still experiencing problems, please:
 
 1. Check the [Claude Dev GitHub Issues](https://github.com/saoudrizwan/claude-dev/issues) to see if others have reported similar problems
 2. If not, create a new issue with details about your operating system, VSCode/Cursor version, and the steps you've tried
 
-For additional help, join our [Discord community](https://discord.gg/claudedev).
+For additional help, join our [Discord](https://discord.gg/claudedev).
