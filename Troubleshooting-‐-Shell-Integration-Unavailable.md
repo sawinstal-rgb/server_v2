@@ -39,7 +39,9 @@ After making these changes:
 
 ## Still Having Trouble?
 
-If you're still experiencing issues after trying the basic troubleshooting steps, you can try [manually installing shell integration](https://code.visualstudio.com/docs/terminal/shell-integration#_manual-installation). For example, if you use zsh:
+If you're still experiencing issues after trying the basic troubleshooting steps, you can try [manually installing shell integration](https://code.visualstudio.com/docs/terminal/shell-integration#_manual-installation). 
+
+For example, if you use zsh:
 
 1. Run `code ~/.zshrc` in the terminal to open your zsh configuration file.
 3. Add the following line to your `~/.zshrc`:
@@ -51,6 +53,14 @@ If you're still experiencing issues after trying the basic troubleshooting steps
 4. Save the file.
 5. Quit VSCode completely.
 6. Reopen VSCode and start a new Claude Dev session.
+
+If you use PowerShell you would do:
+1. Run `code $Profile` in the terminal to open your PowerShell profile.
+3. Add the following line to the file:
+
+```bash
+if ($env:TERM_PROGRAM -eq "vscode") { . "$(code --locate-shell-integration-path pwsh)" }
+```
 
 ## Unusual Terminal Output
 
