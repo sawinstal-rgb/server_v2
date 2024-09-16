@@ -48,12 +48,12 @@ If you're using Windows and still experiencing issues with shell integration aft
 
 PowerShell uses execution policies to determine which scripts can run on your system. Here are the most common policies:
 
-- **Restricted**: No PowerShell scripts can run. This is the default setting.
-- **AllSigned**: All scripts, including local ones, must be signed by a trusted publisher.
-- **RemoteSigned**: Scripts created locally can run, but scripts downloaded from the internet must be signed.
-- **Unrestricted**: No restrictions. Any script can run, though you will be warned before running internet-downloaded scripts.
+- `Restricted`: No PowerShell scripts can run. This is the default setting.
+- `AllSigned`: All scripts, including local ones, must be signed by a trusted publisher.
+- `RemoteSigned`: Scripts created locally can run, but scripts downloaded from the internet must be signed.
+- `Unrestricted`: No restrictions. Any script can run, though you will be warned before running internet-downloaded scripts.
 
-For development work in VSCode, the **RemoteSigned** policy is generally recommended. It allows locally created scripts to run without restrictions while maintaining security for downloaded scripts. To learn more about PowerShell execution policies and understand the security implications of changing them, visit Microsoft's documentation: [About Execution Policies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies).
+For development work in VSCode, the `RemoteSigned` policy is generally recommended. It allows locally created scripts to run without restrictions while maintaining security for downloaded scripts. To learn more about PowerShell execution policies and understand the security implications of changing them, visit Microsoft's documentation: [About Execution Policies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 
 ### Steps to Change the Execution Policy
 
