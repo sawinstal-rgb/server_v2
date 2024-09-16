@@ -57,10 +57,9 @@ For development work in VSCode, the **RemoteSigned** policy is generally recomme
 
 ### Steps to Change the Execution Policy
 
-1. **Open PowerShell as an Administrator**:
-   - Press `Win + X` and select "Windows PowerShell (Administrator)" or "Windows Terminal (Administrator)".
+1. Open PowerShell as an Administrator: Press `Win + X` and select "Windows PowerShell (Administrator)" or "Windows Terminal (Administrator)".
 
-2. **Check Current Execution Policy**:
+2. Check Current Execution Policy:
    - Run this command to see your current policy:
      ```powershell
      Get-ExecutionPolicy
@@ -68,20 +67,17 @@ For development work in VSCode, the **RemoteSigned** policy is generally recomme
    - If the output is already `RemoteSigned`, `Unrestricted`, or `Bypass`, you likely don't need to change your execution policy. These policies should allow shell integration to work.
    - If the output is `Restricted` or `AllSigned`, you may need to change your policy to enable shell integration.
 
-3. **Change the Execution Policy**:
-   - Run the following command:
+3. Change the Execution Policy by running the following command:
      ```powershell
      Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
      ```
    - This sets the policy to `RemoteSigned` for the current user only, which is safer than changing it system-wide.
 
-4. **Confirm the Change**:
-   - Type `Y` and press Enter when prompted.
+4. Confirm the Change by typing `Y` and pressing Enter when prompted.
 
-5. **Verify the Policy Change**:
-   - Run `Get-ExecutionPolicy` again to confirm the new setting.
+5. Verify the Policy Change by running `Get-ExecutionPolicy` again to confirm the new setting.
 
-6. **Restart VSCode** and try the shell integration again.
+6. Restart VSCode and try the shell integration again.
 
 ## Still Having Trouble?
 
