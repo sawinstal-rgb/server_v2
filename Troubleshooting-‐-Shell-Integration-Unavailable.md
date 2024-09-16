@@ -1,8 +1,11 @@
 - [What is Shell Integration?](#what-is-shell-integration)
 - [How to Fix "Shell Integration Unavailable"](#how-to-fix-shell-integration-unavailable)
   - [Step 1: Update VSCode or Cursor](#step-1-update-vscode-or-cursor)
-  - [Step 2: Configure VSCode to Use the Correct Shell](#step-3-configure-vscode-to-use-the-correct-shell)
-  - [Step 3: Restart VSCode](#step-4-restart-vscode)
+  - [Step 2: Configure VSCode to Use the Correct Shell](#step-2-configure-vscode-to-use-the-correct-shell)
+  - [Step 3: Restart VSCode](#step-3-restart-vscode)
+- [Additional Troubleshooting for Windows PowerShell Users](#additional-troubleshooting-for-windows-powershell-users)
+  - [Understanding PowerShell Execution Policies](#understanding-powershell-execution-policies)
+  - [Steps to Change the Execution Policy](#steps-to-change-the-execution-policy)
 - [Still Having Trouble?](#still-having-trouble)
 - [Unusual Terminal Output](#unusual-terminal-output)
 - [Support](#support)
@@ -29,13 +32,56 @@ First, make sure you're using the latest version of VSCode or Cursor:
 3. Type "Terminal: Select Default Profile" and choose it
 4. Select one of the supported shells: zsh, bash, fish, or PowerShell.
 
-### Step 4: Restart VSCode
+### Step 3: Restart VSCode
 
 After making these changes:
 
 1. Quit VSCode completely
 2. Reopen VSCode
 3. Start a new Claude Dev session (you can resume your previous task and try to run the command again, this time with Claude being able to see the output)
+
+## Additional Troubleshooting for Windows PowerShell Users
+
+If you're using Windows and still experiencing issues with shell integration after trying the previous steps, you may need to adjust your PowerShell execution policy. By default, PowerShell restricts script execution for security reasons.
+
+### Understanding PowerShell Execution Policies
+
+PowerShell uses execution policies to determine which scripts can run on your system. Here are the most common policies:
+
+- **Restricted**: No PowerShell scripts can run. This is the default setting.
+- **AllSigned**: All scripts, including local ones, must be signed by a trusted publisher.
+- **RemoteSigned**: Scripts created locally can run, but scripts downloaded from the internet must be signed.
+- **Unrestricted**: No restrictions. Any script can run, though you will be warned before running internet-downloaded scripts.
+
+For development work in VSCode, the **RemoteSigned** policy is generally recommended. It allows locally created scripts to run without restrictions while maintaining security for downloaded scripts. To learn more about PowerShell execution policies and understand the security implications of changing them, visit Microsoft's documentation: [About Execution Policies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies).
+
+### Steps to Change the Execution Policy
+
+1. **Open PowerShell as an Administrator**:
+   - Press `Win + X` and select "Windows PowerShell (Administrator)" or "Windows Terminal (Administrator)".
+
+2. **Check Current Execution Policy**:
+   - Run this command to see your current policy:
+     ```powershell
+     Get-ExecutionPolicy
+     ```
+   - If the output is already `RemoteSigned`, `Unrestricted`, or `Bypass`, you likely don't need to change your execution policy. These policies should allow shell integration to work.
+   - If the output is `Restricted` or `AllSigned`, you may need to change your policy to enable shell integration.
+
+3. **Change the Execution Policy**:
+   - Run the following command:
+     ```powershell
+     Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+     ```
+   - This sets the policy to `RemoteSigned` for the current user only, which is safer than changing it system-wide.
+
+4. **Confirm the Change**:
+   - Type `Y` and press Enter when prompted.
+
+5. **Verify the Policy Change**:
+   - Run `Get-ExecutionPolicy` again to confirm the new setting.
+
+6. **Restart VSCode** and try the shell integration again.
 
 ## Still Having Trouble?
 
