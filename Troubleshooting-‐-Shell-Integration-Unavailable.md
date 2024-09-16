@@ -59,8 +59,7 @@ For development work in VSCode, the `RemoteSigned` policy is generally recommend
 
 1. Open PowerShell as an Administrator: Press `Win + X` and select "Windows PowerShell (Administrator)" or "Windows Terminal (Administrator)".
 
-2. Check Current Execution Policy:
-   - Run this command to see your current policy:
+2. Check Current Execution Policy by running this command:
      ```powershell
      Get-ExecutionPolicy
      ```
