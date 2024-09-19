@@ -1,5 +1,4 @@
 - [How to Fix "powershell is not recognized"](#how-to-fix-powershell-is-not-recognized)
-- [Additional Troubleshooting](#additional-troubleshooting)
 - [Support](#support)
 
 If you're seeing an error message like this:
@@ -25,20 +24,6 @@ This usually means that Windows can't find the PowerShell executable. This is ty
 6. Restart your computer for the changes to take effect.
 
 ![image](https://github.com/user-attachments/assets/a0e2ec9b-d9f8-4b9d-b7c5-758960e68eaa)
-
-## Additional Troubleshooting
-
-If you're still experiencing issues after trying these solutions:
-
-1. Verify PowerShell Installation:
-   - Open File Explorer and navigate to `C:\Windows\System32\WindowsPowerShell\v1.0\`
-   - Check if `powershell.exe` exists in this folder
-
-2. Check System PATH:
-   - Open Command Prompt and type `echo %PATH%`
-   - Verify that the PowerShell directory is listed
-
-3. Sometimes, a system restart is needed for environment variable changes to take effect
 
 ## Support
 
