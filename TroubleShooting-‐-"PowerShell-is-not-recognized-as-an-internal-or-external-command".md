@@ -1,6 +1,3 @@
-- [How to Fix "powershell is not recognized"](#how-to-fix-powershell-is-not-recognized)
-- [Support](#support)
-
 If you're seeing an error message like this:
 
 ```
@@ -11,7 +8,7 @@ operable program or batch file.
 
 This usually means that Windows can't find the PowerShell executable. This is typically caused by the user (or system) PATH environment variable not containing the directory where the PowerShell executable resides.
 
-## How to Fix "'powershell' is not recognized"
+## How to Fix
 
 1. Press `Windows + X` (or right-click on the Start button) and select "System". On the left side, click "Advanced system settings".
 2. In the System Properties window, click the "Environment Variables" button near the bottom.  
