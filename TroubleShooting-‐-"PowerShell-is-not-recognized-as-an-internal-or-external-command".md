@@ -6,7 +6,7 @@ Command failed with exit code 1: powershell (Get-CimInstance -ClassName Win32_Op
 operable program or batch file.
 ```
 
-This usually means that Windows can't find the PowerShell executable. This is typically caused by the user (or system) PATH environment variable not containing the directory where the PowerShell executable resides.
+This usually means that Windows can't find the PowerShell executable. This is caused by the user (or system) PATH environment variable not containing the directory where the PowerShell executable resides.
 
 ## How to Fix
 
