@@ -11,8 +11,8 @@ To mitigate this issue:
 
 When Claude Dev edits a file, it opens in VSCode's diff editor view. This presents two side-by-side versions of the file:
 
-- **Left side:** Original file (virtual document)
-- **Right side:** File with Claude's changes
+- **Left side:** Virtual document with file's original contents
+- **Right side:** Updated file with Claude's changes
 
 ### Step 1: Expand the Diff View for Easier Editing
 
