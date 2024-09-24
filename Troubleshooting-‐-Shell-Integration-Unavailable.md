@@ -42,7 +42,9 @@ After making these changes:
 
 ## Additional Troubleshooting for Windows PowerShell Users
 
-If you're using Windows and still experiencing issues with shell integration after trying the previous steps, you may need to adjust your PowerShell execution policy. By default, PowerShell restricts script execution for security reasons.
+If you're using Windows and still experiencing issues with shell integration after trying the previous steps, make sure you're using an updated version of PowerShell (at least v7+).
+
+You may also need to adjust your PowerShell execution policy. By default, PowerShell restricts script execution for security reasons.
 
 ### Understanding PowerShell Execution Policies
 
