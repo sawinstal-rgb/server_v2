@@ -17,7 +17,7 @@ When Claude Dev edits a file, it opens in VSCode's diff editor view. This presen
 ### Step 1: Expand the Diff View for Easier Editing
 
 <p>
-  <img src="https://github.com/user-attachments/assets/9e466992-7fc4-48cc-b5b8-19b9e27cb94a" height="500" style="width: auto;" />
+  <img src="https://github.com/user-attachments/assets/9e466992-7fc4-48cc-b5b8-19b9e27cb94a" width="900" />
 </p>
 
 1. By default, the diff view may be collapsed, showing changes merged into a single view. This can make editing more challenging.
@@ -26,7 +26,7 @@ When Claude Dev edits a file, it opens in VSCode's diff editor view. This presen
 ### Step 2: Using the Revert Block Button
 
 <p>
-  <img src="https://github.com/user-attachments/assets/4d26653f-d755-4b8b-bf9c-823a1146594f" height="500" />
+  <img src="https://github.com/user-attachments/assets/4d26653f-d755-4b8b-bf9c-823a1146594f" width="900" />
 </p>
 
 1. Locate the truncated section in the right-side document.
@@ -35,7 +35,7 @@ When Claude Dev edits a file, it opens in VSCode's diff editor view. This presen
 ### Alternative: Manual Copy and Paste
 
 <p>
-  <img src="https://github.com/user-attachments/assets/57bdf1f2-55ad-4a79-bf1a-de6a753e136d" height="500" />
+  <img src="https://github.com/user-attachments/assets/57bdf1f2-55ad-4a79-bf1a-de6a753e136d" width="900" />
 </p>
 
 If you're having trouble with the revert block button:
