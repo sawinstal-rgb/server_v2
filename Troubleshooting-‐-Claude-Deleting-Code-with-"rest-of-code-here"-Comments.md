@@ -17,7 +17,7 @@ When Claude Dev edits a file, it opens in VSCode's diff editor view. This presen
 ### Step 1: Expand the Diff View for Easier Editing
 
 <p>
-  <img src="https://github.com/user-attachments/assets/9e466992-7fc4-48cc-b5b8-19b9e27cb94a" height="500" />
+  <img src="https://github.com/user-attachments/assets/9e466992-7fc4-48cc-b5b8-19b9e27cb94a" height="500" style="width: auto;" />
 </p>
 
 1. By default, the diff view may be collapsed, showing changes merged into a single view. This can make editing more challenging.
