@@ -46,7 +46,9 @@ If you're having trouble with the revert block button:
 
 By using these methods, you can easily restore any content that the model may have truncated, ensuring your code remains intact. When you make these manual adjustments, the extension communicates these edits back to Claude so he knows the final state of the file before proceeding in the task.
 
-![image](https://github.com/user-attachments/assets/def5e644-d4a8-4a99-a690-843579680104)
+<p>
+  <img src="https://github.com/user-attachments/assets/def5e644-d4a8-4a99-a690-843579680104" width="400" />
+</p>
 
 ## Support
 
