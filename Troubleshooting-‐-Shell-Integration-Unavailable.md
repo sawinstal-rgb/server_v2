@@ -47,6 +47,8 @@ After making these changes:
 ## Additional Troubleshooting for Windows PowerShell Users
 
 If you're using Windows and still experiencing issues with shell integration after trying the previous steps, make sure you're using an updated version of PowerShell (at least v7+).
+  - Check your current PowerShell version by running: `$PSVersionTable.PSVersion`
+  - If your version is below 7, [update PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/whats-new/migrating-from-windows-powershell-51-to-powershell-7?view=powershell-7.4#installing-powershell-7).
 
 You may also need to adjust your PowerShell execution policy. By default, PowerShell restricts script execution for security reasons.
 
