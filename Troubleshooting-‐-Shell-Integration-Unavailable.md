@@ -1,4 +1,4 @@
-**Note**: I've created a [minimal reproducible environment](https://github.com/saoudrizwan/shell-integration-problems) to help report issues with VSCode 1.93's new Terminal Shell Integration API. This repository aims to assist the VSCode team in improving the API and was created for users of the Claude Dev extension experiencing shell integration problems. If the troubleshooting steps below don't resolve your issue, please follow the steps in that repository to report the problems you encounter.
+**Note**: I've created a [minimal reproducible environment](https://github.com/saoudrizwan/shell-integration-problems) to help report issues with VSCode 1.93's new Terminal Shell Integration API. This repository aims to assist the VSCode team in debugging and improving this new API. If the troubleshooting steps below don't resolve your issue, please follow the steps in that repository to report the problems you encounter.
 
 ***
 
