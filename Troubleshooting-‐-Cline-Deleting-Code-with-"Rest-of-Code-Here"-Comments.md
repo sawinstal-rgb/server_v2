@@ -1,4 +1,4 @@
-Sometimes when using Claude Dev to edit files, you may notice it replaces large chunks of code with placeholder comments like `// rest of code here`. This behavior occurs due to the AI model's maximum output token limit. For large files, the model may truncate portions of the code to fit within its constraints.
+Sometimes when using Cline to edit files, you may notice it replaces large chunks of code with placeholder comments like `// rest of code here`. This behavior occurs due to the AI model's maximum output token limit. For large files, the model may truncate portions of the code to fit within its constraints.
 
 ## Best Practices
 
@@ -9,7 +9,7 @@ To mitigate this issue:
 
 ## Workaround: Using VSCode's Diff Editor
 
-When Claude Dev edits a file, it opens in VSCode's diff editor view. This presents two side-by-side versions of the file:
+When Cline edits a file, it opens in VSCode's diff editor view. This presents two side-by-side versions of the file:
 
 - **Left side:** Virtual document with file's original contents
 - **Right side:** Updated file with Claude's changes
@@ -44,7 +44,7 @@ If you're having trouble with the revert block button:
 2. Copy the selected text.
 3. Paste it into the appropriate location in the right-side document.
 
-By using these methods, you can easily restore any content that the model may have truncated, ensuring your code remains intact. When you make these manual adjustments, the extension communicates these edits back to Claude so he knows the final state of the file before proceeding in the task.
+By using these methods, you can easily restore any content that the model may have truncated, ensuring your code remains intact. When you make these manual adjustments, the extension communicates these edits back to Cline so he knows the final state of the file before proceeding in the task.
 
 <p>
   <img src="https://github.com/user-attachments/assets/def5e644-d4a8-4a99-a690-843579680104" width="400" />
@@ -54,7 +54,7 @@ By using these methods, you can easily restore any content that the model may ha
 
 If you've followed these steps and are still experiencing problems, please:
 
-1. Check the [Claude Dev GitHub Issues](https://github.com/saoudrizwan/claude-dev/issues) to see if others have reported similar problems
+1. Check the [Cline GitHub Issues](https://github.com/cline/clinebot/issues) to see if others have reported similar problems
 2. If not, create a new issue with details about your operating system, VSCode/Cursor version, and the steps you've tried
 
-For additional help, join our [Discord](https://discord.gg/claudedev).
+For additional help, join our [Discord](https://discord.gg/cline).
