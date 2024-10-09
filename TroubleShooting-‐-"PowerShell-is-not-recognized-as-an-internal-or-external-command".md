@@ -26,7 +26,7 @@ This usually means that Windows can't find the PowerShell executable. This is ca
 
 If you've followed these steps and are still experiencing problems, please:
 
-1. Check the [Claude Dev GitHub Issues](https://github.com/saoudrizwan/claude-dev/issues) to see if others have reported similar problems
+1. Check the [Cline GitHub Issues](https://github.com/clinebot/cline/issues) to see if others have reported similar problems
 2. If not, create a new issue with details about your operating system, VSCode/Cursor version, and the steps you've tried
 
-For additional help, join our [Discord](https://discord.gg/claudedev).
+For additional help, join our [Discord](https://discord.gg/cline).
