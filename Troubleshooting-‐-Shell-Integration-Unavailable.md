@@ -16,7 +16,7 @@
 
 ## What is Shell Integration?
 
-Shell integration is a [new feature in VSCode 1.93](https://code.visualstudio.com/updates/v1_93#_terminal-shell-integration-api) that allows extensions like Claude Dev to run commands in your terminal and read their output. Command output allows Claude to react to the result of the command on his own, without you having to handhold by copy-pasting the output in yourself. It's also quite powerful when running development servers as it allows Claude to fix errors as the server logs them.
+Shell integration is a [new feature in VSCode 1.93](https://code.visualstudio.com/updates/v1_93#_terminal-shell-integration-api) that allows extensions like Cline to run commands in your terminal and read their output. Command output allows Cline to react to the result of the command on his own, without you having to handhold by copy-pasting the output in yourself. It's also quite powerful when running development servers as it allows Cline to fix errors as the server logs them.
 
 ## How to Fix "Shell Integration Unavailable"
 
@@ -42,7 +42,7 @@ After making these changes:
 
 1. Quit VSCode completely
 2. Reopen VSCode
-3. Start a new Claude Dev session (you can resume your previous task and try to run the command again, this time with Claude being able to see the output)
+3. Start a new Cline session (you can resume your previous task and try to run the command again, this time with Cline being able to see the output)
 
 ## Additional Troubleshooting for Windows PowerShell Users
 
@@ -101,7 +101,7 @@ For example, if you use zsh:
 
 3. Save the file.
 4. Quit VSCode completely.
-5. Reopen VSCode and start a new Claude Dev session.
+5. Reopen VSCode and start a new Cline session.
 
 If you use PowerShell you would do:
 1. Run `code $Profile` in the terminal to open your PowerShell profile.
@@ -137,7 +137,7 @@ If disabling these customizations resolves the issue, you may need to find alter
 
 If you've followed these steps and are still experiencing problems, please:
 
-1. Check the [Claude Dev GitHub Issues](https://github.com/saoudrizwan/claude-dev/issues) to see if others have reported similar problems
+1. Check the [Cline GitHub Issues](https://github.com/clinebot/cline/issues) to see if others have reported similar problems
 2. If not, create a new issue with details about your operating system, VSCode/Cursor version, and the steps you've tried
 
-For additional help, join our [Discord](https://discord.gg/claudedev).
+For additional help, join our [Discord](https://discord.gg/cline).
