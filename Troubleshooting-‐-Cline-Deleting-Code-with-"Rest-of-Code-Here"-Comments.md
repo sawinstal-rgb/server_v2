@@ -54,7 +54,7 @@ By using these methods, you can easily restore any content that the model may ha
 
 If you've followed these steps and are still experiencing problems, please:
 
-1. Check the [Cline GitHub Issues](https://github.com/cline/clinebot/issues) to see if others have reported similar problems
+1. Check the [Cline GitHub Issues](https://github.com/cline/cline/issues) to see if others have reported similar problems
 2. If not, create a new issue with details about your operating system, VSCode/Cursor version, and the steps you've tried
 
 For additional help, join our [Discord](https://discord.gg/cline).
