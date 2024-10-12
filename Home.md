@@ -10,12 +10,12 @@ Cline is an AI assistant for VSCode that can use your CLI and Editor to help wit
 
 ## Useful Links
 
-- [Feature Requests](https://github.com/clinebot/cline/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop)
+- [Feature Requests](https://github.com/cline/cline/discussions/categories/feature-requests?discussions_q=is%3Aopen+category%3A%22Feature+Requests%22+sort%3Atop)
 - [Join our Discord](https://discord.gg/cline)
 
 ## Contributing
 
-We welcome contributions to Cline! Check out our [open issues](https://github.com/clinebot/cline/issues) or join our [Discord](https://discord.gg/cline) to get involved.
+We welcome contributions to Cline! Check out our [open issues](https://github.com/cline/cline/issues) or join our [Discord](https://discord.gg/cline) to get involved.
 
 ---
 
