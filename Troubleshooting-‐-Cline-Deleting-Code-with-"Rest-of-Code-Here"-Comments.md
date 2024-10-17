@@ -1,6 +1,6 @@
 Sometimes when using Cline to edit files, you may notice it replaces large chunks of code with placeholder comments like `// rest of code here`. This behavior occurs due to the AI model's maximum output token limit. For large files, the model may truncate portions of the code to fit within its constraints.
 
-**Note:** Anthropic has announced an upcoming feature called "Fast Edit Mode" for Claude 3.5 Sonnet, which will enable quicker and more reliable token output when editing files. It works by letting the model essentially regurgitate previously read tokens, and only have to "think" about _changes_ to the file, rather than the entire contents. I will update the extension with this feature as soon as it becomes available, and this lazy coding issue will be a thing of the past. In the meantime, please try the troubleshooting steps below.
+**Note:** Anthropic has announced an upcoming feature called "Fast Edit Mode" for Claude 3.5 Sonnet, which will enable faster and more reliable token output when editing files. It works by letting the model essentially regurgitate previously read tokens, and only have to "think" about _changes_ to the file, rather than the entire contents. I will update the extension with this feature as soon as it becomes available, and this lazy coding issue will be a thing of the past. In the meantime, please try the troubleshooting steps below.
 
 ## Best Practices
 
@@ -14,7 +14,7 @@ To mitigate this issue:
 When Cline edits a file, it opens in VSCode's diff editor view. This presents two side-by-side versions of the file:
 
 - **Left side:** Virtual document with file's original contents
-- **Right side:** Updated file with Claude's changes
+- **Right side:** Updated file with Cline's changes
 
 ### Step 1: Expand the Diff View for Easier Editing
 
