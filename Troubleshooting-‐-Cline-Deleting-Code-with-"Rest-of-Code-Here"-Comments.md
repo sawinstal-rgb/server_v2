@@ -46,7 +46,7 @@ If you're having trouble with the revert block button:
 2. Copy the selected text.
 3. Paste it into the appropriate location in the right-side document.
 
-By using these methods, you can easily restore any content that the model may have truncated, ensuring your code remains intact. When you make these manual adjustments, the extension communicates these edits back to Cline so he knows the final state of the file before proceeding in the task.
+By using these methods, you can easily restore any content that the model may have truncated, ensuring your code remains intact. When you make these manual adjustments, the extension communicates these edits back to the model so it knows the final state of the file before proceeding in the task.
 
 <p>
   <img src="https://github.com/user-attachments/assets/def5e644-d4a8-4a99-a690-843579680104" width="400" />
