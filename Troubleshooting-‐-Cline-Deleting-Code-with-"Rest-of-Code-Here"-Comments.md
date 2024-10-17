@@ -1,5 +1,7 @@
 Sometimes when using Cline to edit files, you may notice it replaces large chunks of code with placeholder comments like `// rest of code here`. This behavior occurs due to the AI model's maximum output token limit. For large files, the model may truncate portions of the code to fit within its constraints.
 
+**Note:** Anthropic has announced an upcoming feature called "Fast Edit Mode" for Claude 3.5 Sonnet, which will enable quicker and more reliable token output when editing files. I will update the extension with this feature as soon as it becomes available, and this lazy coding issue will be a thing of the past. In the meantime, please try the troubleshooting steps below.
+
 ## Best Practices
 
 To mitigate this issue:
