@@ -7,9 +7,11 @@
   - [Step 1: Update VSCode or Cursor](#step-1-update-vscode-or-cursor)
   - [Step 2: Configure VSCode to Use the Correct Shell](#step-2-configure-vscode-to-use-the-correct-shell)
   - [Step 3: Restart VSCode](#step-3-restart-vscode)
-- [Additional Troubleshooting for Windows PowerShell Users](#additional-troubleshooting-for-windows-powershell-users)
-  - [Understanding PowerShell Execution Policies](#understanding-powershell-execution-policies)
-  - [Steps to Change the Execution Policy](#steps-to-change-the-execution-policy)
+- [Additional Troubleshooting for Windows Users](#additional-troubleshooting-for-windows-users)
+  - [Git Bash](#git-bash)
+  - [PowerShell](#powershell)
+    - [Understanding PowerShell Execution Policies](#understanding-powershell-execution-policies)
+    - [Steps to Change the Execution Policy](#steps-to-change-the-execution-policy)
 - [Still Having Trouble?](#still-having-trouble)
 - [Unusual Terminal Output](#unusual-terminal-output)
 - [Support](#support)
@@ -44,15 +46,29 @@ After making these changes:
 2. Reopen VSCode
 3. Start a new Cline session (you can resume your previous task and try to run the command again, this time with Cline being able to see the output)
 
-## Additional Troubleshooting for Windows PowerShell Users
+## Additional Troubleshooting for Windows Users
 
-If you're using Windows and still experiencing issues with shell integration after trying the previous steps, make sure you're using an updated version of PowerShell (at least v7+).
+If you're using Windows and still experiencing issues with shell integration after trying the previous steps, it's recommended you use Git Bash.
+
+### Git Bash
+
+Git Bash is a terminal emulator that provides a Unix-like command line experience on Windows. To use Git Bash, you need to:
+
+1. Download and run the Git for Windows installer from [https://git-scm.com/downloads/win](https://git-scm.com/downloads/win)
+2. Quit and re-open VSCode
+3. Press `Ctrl + Shift + P` to open the Command Palette
+4. Type "Terminal: Select Default Profile" and choose it
+5. Select "Git Bash"
+
+### PowerShell
+
+If you'd still like to use PowerShell, make sure you're using an updated version (at least v7+).
   - Check your current PowerShell version by running: `$PSVersionTable.PSVersion`
   - If your version is below 7, [update PowerShell](https://learn.microsoft.com/en-us/powershell/scripting/whats-new/migrating-from-windows-powershell-51-to-powershell-7?view=powershell-7.4#installing-powershell-7).
 
 You may also need to adjust your PowerShell execution policy. By default, PowerShell restricts script execution for security reasons.
 
-### Understanding PowerShell Execution Policies
+#### Understanding PowerShell Execution Policies
 
 PowerShell uses execution policies to determine which scripts can run on your system. Here are the most common policies:
 
@@ -63,7 +79,7 @@ PowerShell uses execution policies to determine which scripts can run on your sy
 
 For development work in VSCode, the `RemoteSigned` policy is generally recommended. It allows locally created scripts to run without restrictions while maintaining security for downloaded scripts. To learn more about PowerShell execution policies and understand the security implications of changing them, visit Microsoft's documentation: [About Execution Policies](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_execution_policies).
 
-### Steps to Change the Execution Policy
+#### Steps to Change the Execution Policy
 
 1. Open PowerShell as an Administrator: Press `Win + X` and select "Windows PowerShell (Administrator)" or "Windows Terminal (Administrator)".
 
