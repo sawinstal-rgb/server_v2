@@ -1,3 +1,5 @@
+[Installing Git for Checkpoints](https://github.com/cline/cline/wiki/Installing-Git-for-Checkpoints)
+
 **Troubleshooting**
 
 [Shell Integration Unavailable](https://github.com/cline/cline/wiki/Troubleshooting-%E2%80%90-Shell-Integration-Unavailable)
