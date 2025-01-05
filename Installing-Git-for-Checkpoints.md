@@ -2,16 +2,6 @@
 
 Cline uses Git under the hood to create checkpoints of your workspace throughout tasks. Every time Cline makes changes to your files, it automatically creates a Git commit, allowing you to track and revert changes if needed. Follow the instructions below to install Git for your operating system.
 
-## Windows
-
-1. Download the official Git installer from [git-scm.com](https://git-scm.com/downloads/win)
-2. Run the installer you downloaded (e.g., `Git-2.X.X-64-bit.exe`)
-3. During installation:
-   - Accept the default settings unless you have specific preferences
-   - For "Adjusting your PATH environment", select "Git from the command line and also from 3rd-party software"
-   - For terminal emulator, choose "Use Windows' default console window"
-4. Click through the rest of the installer using the default settings
-
 ## macOS
 
 ### Option 1: Using the Official Installer
@@ -27,6 +17,14 @@ Cline uses Git under the hood to create checkpoints of your workspace throughout
    ```bash
    brew install git
    ```
+
+## Windows
+
+1. Download the official Git installer from [git-scm.com](https://git-scm.com/downloads/win)
+2. Run the installer you downloaded (e.g., `Git-2.X.X-64-bit.exe`)
+3. During installation:
+   - For "Adjusting your PATH environment", select "Git from the command line and also from 3rd-party software"
+4. Click through the rest of the installer using the default settings
 
 ## Linux
 
