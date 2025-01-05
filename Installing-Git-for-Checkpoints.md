@@ -4,7 +4,7 @@ Cline uses Git under the hood to create checkpoints of your workspace throughout
 
 ## Windows
 
-1. Download the official Git installer from [git-scm.com](https://git-scm.com/download/windows)
+1. Download the official Git installer from [git-scm.com](https://git-scm.com/downloads/win)
 2. Run the installer you downloaded (e.g., `Git-2.X.X-64-bit.exe`)
 3. During installation:
    - Accept the default settings unless you have specific preferences
@@ -16,7 +16,7 @@ Cline uses Git under the hood to create checkpoints of your workspace throughout
 
 ### Option 1: Using the Official Installer
 
-1. Download the latest Git installer from [git-scm.com](https://git-scm.com/download/mac)
+1. Download the latest Git installer from [git-scm.com](https://git-scm.com/downloads/mac)
 2. Double click the downloaded package (e.g., `git-2.X.X-intel-universal-mavericks.dmg`)
 3. Follow the installation prompts
 
