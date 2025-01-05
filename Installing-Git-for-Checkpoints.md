@@ -4,14 +4,6 @@ Cline uses Git under the hood to create checkpoints of your workspace throughout
 
 ## macOS
 
-### Option 1: Using the Official Installer
-
-1. Download the latest Git installer from [git-scm.com](https://git-scm.com/downloads/mac)
-2. Double click the downloaded package (e.g., `git-2.X.X-intel-universal-mavericks.dmg`)
-3. Follow the installation prompts
-
-### Option 2: Using Homebrew
-
 1. If you don't have Homebrew installed, [install it first](https://brew.sh)
 2. Install Git using Homebrew:
    ```bash
