@@ -9,14 +9,12 @@ Cline uses Git under the hood to create checkpoints of your workspace throughout
    ```bash
    brew install git
    ```
+3. Quite and re-open VSCode. Cline will automatically detect Git and enable checkpoints.
 
 ## Windows
 
-1. Download the official Git installer from [git-scm.com](https://git-scm.com/downloads/win)
-2. Run the installer you downloaded (e.g., `Git-2.X.X-64-bit.exe`)
-3. During installation:
-   - For "Adjusting your PATH environment", select "Git from the command line and also from 3rd-party software"
-4. Click through the rest of the installer using the default settings
+1. Download and run the official Git installer from [git-scm.com](https://git-scm.com/downloads/win)
+2. Quite and re-open VSCode. Cline will automatically detect Git and enable checkpoints.
 
 ## Linux
 
@@ -30,10 +28,7 @@ Cline uses Git under the hood to create checkpoints of your workspace throughout
    ```bash
    sudo apt install git
    ```
-
-## After Installation
-
-After following the installation process, restart VSCode/Cursor. Cline will automatically detect Git and enable checkpoints.
+3. Quite and re-open VSCode. Cline will automatically detect Git and enable checkpoints.
 
 ## Support
 
