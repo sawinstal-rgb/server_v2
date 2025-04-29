@@ -152,7 +152,10 @@ If disabling these customizations resolves the issue, you may need to find alter
 If you’re using Windows and have OneDrive enabled on your PC, your desktop directory path might differ from a typical user. Terminal processes will look to launch from C:\Users\<user>\Desktop, while Onedrive users will have a desktop path that looks like C:\Users\<user>\Onedrive\Desktop. To solve this, we can create a symbolic link from the expected Desktop location to the actual OneDrive Desktop location.
 
 1. Launch Command Prompt in administrator mode
-2. Enter the command `mklink /J "C:\Users\<username>\Desktop" "C:\Users\<username>\OneDrive\Desktop`
+2. Enter the command:
+
+ `mklink /J "C:\Users\<username>\Desktop" "C:\Users\<username>\OneDrive\Desktop`
+
 3. Press Enter and close Command Prompt
 4. Restart VSCode 
 
